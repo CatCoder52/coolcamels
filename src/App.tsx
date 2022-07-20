@@ -26,6 +26,7 @@ import { WalletModalProvider } from '@solana/wallet-adapter-react-ui'
 import './App.css'
 import { DEFAULT_TIMEOUT } from './connection'
 import Home from './Home'
+import Community from './Community'
 
 require('@solana/wallet-adapter-react-ui/styles.css')
 
@@ -103,7 +104,6 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect={true}>
           <WalletModalProvider>
-          <h1 className="bg-green-800 text-center text-gray-800 p-20">Test tw</h1>
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
@@ -111,6 +111,7 @@ const App = () => {
               rpcHost={rpcHost}
               network={network}
             />
+            <Community/>
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>

@@ -1,0 +1,242 @@
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+a:hover {
+  color: #0a58ca;
+}
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+}
+.text-center {
+  text-align: center !important;
+}
+
+.col-lg-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.pt-121 {
+  padding-top: 121px;
+}
+.pb-120 {
+  padding-bottom: 120px;
+}
+.mb-27 {
+  margin-bottom: 27px;
+}
+.mb-42 {
+  margin-bottom: 42px;
+}
+.mb--9 {
+  margin-bottom: -9px;
+}
+@media only screen and (max-width: 991px) {
+  .md-pt-70 {
+    padding-top: 70px;
+  }
+  .md-pb-80 {
+    padding-bottom: 80px;
+  }
+}
+
+h2 {
+  font-family: 'Sora', sans-serif;
+  color: #160a24;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+}
+.white-color {
+  color: #ffffff !important;
+}
+a {
+  color: #009ff9;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  outline: none !important;
+}
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: 0 none;
+  color: #009ff9;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.opacity-07 {
+  opacity: 0.7;
+}
+.readon {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Sora', sans-serif;
+  background: #ff4d01;
+  padding: 16px 50px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.readon span {
+  position: relative;
+  z-index: 2;
+}
+.readon.gradient {
+  background-image: linear-gradient(-75deg, #009ff9 5%, #01ff99 100%);
+  overflow: hidden;
+}
+.readon.gradient:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(-75deg, #ff4d01 5%, #009ff9 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.readon.gradient:hover {
+  background: linear-gradient(-75deg, #009ff9 5%, #ff4d01 100%);
+}
+.readon.gradient:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+.readon:hover {
+  color: #ffffff;
+  background: #009ff9;
+}
+.sec-title .desc.big {
+  font-size: 18px;
+  line-height: 28px;
+}
+.rs-join-now {
+ /*  background: url("img/join-bg.png"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20rem;
+  background-color: #cd9831;
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .sec-title .title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .readon {
+    padding: 12px 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sec-title .title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .readon {
+    line-height: 26px;
+  }
+  .readon {
+    font-size: 16px;
+  }
+}

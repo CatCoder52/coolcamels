@@ -167,13 +167,17 @@ const MintContainer = styled.div`
   flex: 1 1 auto;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
 `
 
 const DesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
   gap: 20px;
+  justify-content: space-around;
+  align-items: center;
 `
 
 const Price = styled(Chip)`
@@ -705,9 +709,16 @@ const Home = (props: HomeProps) => {
         </WalletContainer>
         <br />
         <MintContainer>
+          <div className='text-container'>
+            <h2 className='title'>Cool-Camels</h2>
+            <p className='desc'>
+              Tellus molestie nunc non blandit massa. Tortor at risus viverra
+              adipiscing at. Amet facilisis magna etiam tempor. Amet massa vitae
+              tortor lacinia the quis.
+            </p>
+          </div>
           <DesContainer>
             <NFT elevation={3}>
-              <h2>Cool-Camels</h2>
               <br />
               <div>
                 <Price
@@ -717,7 +728,7 @@ const Home = (props: HomeProps) => {
                       : price + ' ' + priceLabel
                   }
                 />
-                <Image src='cool-cats.gif' alt='NFT To Mint' />
+                <Image src='cool-camels.gif' alt='NFT To Mint' />
               </div>
               <br />
               {wallet &&
