@@ -1,0 +1,20 @@
+
+footer {
+    background: #fff;
+    padding: 2rem 10rem;
+    color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #222;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}

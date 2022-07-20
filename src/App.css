@@ -7,8 +7,8 @@
 }
 
 body{
-/*  background-color:var(--main-background-color);*/
-  background: url("img/background.svg");
+ background-color: #fff;
+  /* background: url("img/bg.svg"); */
   background-size: cover;
   font-family: 'Kanit', sans-serif;
   font-size: 1.1em;

@@ -27,6 +27,7 @@ import './App.css'
 import { DEFAULT_TIMEOUT } from './connection'
 import Home from './Home'
 import Community from './Community'
+import Footer from './Footer'
 
 require('@solana/wallet-adapter-react-ui/styles.css')
 
@@ -111,7 +112,8 @@ const App = () => {
               rpcHost={rpcHost}
               network={network}
             />
-            <Community/>
+            <Community />
+            <Footer />
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
