@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/heading-has-content */
+// @ts-nocheck
 import { createTheme, ThemeProvider } from '@material-ui/core'
 import { useMemo } from 'react'
 import {
@@ -101,6 +103,7 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect={true}>
           <WalletModalProvider>
+          <h1 className="bg-green-800 text-center text-gray-800 p-20">Test tw</h1>
             <Home
               candyMachineId={candyMachineId}
               connection={connection}

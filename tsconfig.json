@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "checkJs": false,
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,13 +21,14 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ],
   "exclude": [
     "node_modules",
     "./node_modules",
     "./node_modules/*",
     "./node_modules/@types/node/index.d.ts",
+    "*.d.ts"
+  ],
+  "include": [
+    "src"
   ]
 }
