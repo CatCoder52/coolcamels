@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import confetti from 'canvas-confetti'
 import * as anchor from '@project-serum/anchor'
 import {
@@ -44,6 +44,7 @@ const WalletContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 2rem;
 `
 
 const WalletAmount = styled.div`
@@ -90,11 +91,13 @@ const ConnectButton = styled(WalletMultiButton)`
 
 const NFT = styled(Paper)`
   max-width: 500px;
-  margin: 0 auto;
-  padding: 5px 20px 20px 20px;
+  height: 511px;
+  margin: -40px auto;
+  padding: 5px 20px 20px;
   flex: 1 1 auto;
   background-color: var(--card-background-color) !important;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
 `
 
 const Card = styled(Paper)`
@@ -166,7 +169,7 @@ const MintContainer = styled.div`
   flex-direction: row;
   flex: 1 1 auto;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
@@ -192,8 +195,8 @@ const Price = styled(Chip)`
 `
 
 const Image = styled.img`
-  max-width: 500px;
-  height: 400px;
+  width: 340px;
+  max-height: 263px;
   min-width: 200px;
   object-fit: cover;
   border-radius: 7px;
