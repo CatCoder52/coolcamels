@@ -9,9 +9,10 @@ import { CandyMachineAccount } from './candy-machine'
 export const CTAButton = styled(Button)`
   display: block !important;
   margin: 0 auto !important;
-  background-color: var(--title-text-color) !important;
+  border: 1px solid #222 !important;
   min-width: 120px !important;
   font-size: 1em !important;
+  cursor: pointer;
 `
 
 export const MintButton = ({

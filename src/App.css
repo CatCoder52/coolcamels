@@ -23,4 +23,35 @@ font-weight: normal;
 }
 
 
+button {
+    cursor: pointer;
+}
 
+ul.menus {
+    color: #222;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    padding: 20px 30px;
+    height: 100px;
+    margin: auto 0;
+}
+
+@media only screen and (max-width: 805px) {
+  ul.menus {
+    width: 100%;
+    gap: 10%;
+  }
+}
+
+li.menu {
+    cursor: pointer;
+}
+
+li.menu:hover {
+    color: #cc8621;
+    text-decoration: underline;
+}

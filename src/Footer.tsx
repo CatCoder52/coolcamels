@@ -9,6 +9,9 @@ const Footer = () => {
         <a className='sl' href='https://www.facebook.com/QodeInteractive/'>
           <span>Fb.</span>
         </a>
+        <a className='sl' href='https://discord.gg/coolcamels'>
+          <span>Dc.</span>
+        </a>
         <a className='sl' href='https://www.instagram.com/qodeinteractive/'>
           <span>In.</span>
         </a>

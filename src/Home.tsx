@@ -45,6 +45,9 @@ const WalletContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2rem;
+  align-items: center;
+  border: 1px solid #222;
+  height: 100px;
 `
 
 const WalletAmount = styled.div`
@@ -65,7 +68,7 @@ const WalletAmount = styled.div`
   line-height: 1.75;
   text-transform: uppercase;
   border: 0;
-  margin: 0;
+  margin: 0 15px 0 0;
   display: inline-flex;
   outline: 0;
   position: relative;
@@ -74,6 +77,10 @@ const WalletAmount = styled.div`
   vertical-align: middle;
   justify-content: flex-start;
   gap: 10px;
+  @media only screen and (max-width: 805px) {
+    width: 75vw;
+    margin: 0 10%;
+  }
 `
 
 const Wallet = styled.ul`
@@ -94,8 +101,9 @@ const NFT = styled(Paper)`
   height: 511px;
   margin: -40px auto;
   padding: 5px 20px 20px;
+  border: 1px solid #222;
   flex: 1 1 auto;
-  background-color: var(--card-background-color) !important;
+  background-color: #fff !important;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
 `
@@ -707,7 +715,13 @@ const Home = (props: HomeProps) => {
     <main>
       <MainContainer>
         <WalletContainer>
-          <img className="logo" src='logo.png' width="100px" alt='logo' />
+          <img className='logo' src='logo.png' width='100px' alt='logo' />
+          <ul className='menus'>
+            <li className='menu'>Menu1</li>
+            <li className='menu'>Menu2</li>
+            <li className='menu'>Menu3</li>
+            <li className='menu'>Menu4</li>
+          </ul>
           <Wallet>
             {wallet ? (
               <WalletAmount>
