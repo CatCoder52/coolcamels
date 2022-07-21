@@ -43,7 +43,7 @@ const WalletContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content: space-between;
 `
 
 const WalletAmount = styled.div`
@@ -704,6 +704,7 @@ const Home = (props: HomeProps) => {
     <main>
       <MainContainer>
         <WalletContainer>
+          <img className="logo" src='logo.png' width="100px" alt='logo' />
           <Wallet>
             {wallet ? (
               <WalletAmount>

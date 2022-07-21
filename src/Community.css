@@ -198,3 +198,7 @@ a:hover {
     padding: 12px 40px;
   }
 }
+
+.z-999 {
+    z-index: 9999;
+}

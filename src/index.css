@@ -42,3 +42,41 @@ p.desc {
   color: #222;
   margin-top: 1rem;
 }
+
+.logo {
+  max-width: 20%;
+}
+
+.bn47 {
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2.5rem;
+  color: #000000;
+  border: 3px solid #776e62;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
+}
+
+.bn47:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: #cd9831;
+  border-right: 3px solid #cd9831;
+  border-bottom: 3px solid #cd9831;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bn47:hover {
+  padding: 0.75rem 2.25rem;
+  color: #fff
+}
+
+.bn47:hover:before {
+  top: 0;
+  left: 0;
+}
