@@ -718,7 +718,7 @@ const Home = (props: HomeProps) => {
         <br />
         <MintContainer>
           <div className='text-container'>
-            <h2 className='title'>Cool-Camels</h2>
+            <h2 className='title'>Cool Camels</h2>
             <p className='desc'>
               Tellus molestie nunc non blandit massa. Tortor at risus viverra
               adipiscing at. Amet facilisis magna etiam tempor. Amet massa vitae
