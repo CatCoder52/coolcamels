@@ -64,9 +64,9 @@ p.desc {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background-color: #cd9831;
-  border-right: 3px solid #cd9831;
-  border-bottom: 3px solid #cd9831;
+  background-color: #ffcc80;
+  border-right: 3px solid #ffcc80;
+  border-bottom: 3px solid #ffcc80;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
