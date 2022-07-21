@@ -1,20 +1,26 @@
-
 footer {
-    background: #fff;
-    padding: 2rem 10rem;
-    color: #222;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
+  background: #fff;
+  padding: 2rem 10%;
+  color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 footer p {
-    color: #222;
+  color: #222;
+}
+
+@media only screen and (max-width: 700px) {
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .social {
-    display: flex;
-    justify-content: space-between;
-    width: 150px;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
 }

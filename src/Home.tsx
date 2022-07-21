@@ -89,7 +89,7 @@ const ConnectButton = styled(WalletMultiButton)`
 `
 
 const NFT = styled(Paper)`
-  min-width: 500px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 5px 20px 20px 20px;
   flex: 1 1 auto;
@@ -170,6 +170,9 @@ const MintContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 5rem;
+  @media only screen and (max-width: 1022px) {
+    justify-content: center;
+  }
 `
 
 const DesContainer = styled.div`
@@ -189,10 +192,15 @@ const Price = styled(Chip)`
 `
 
 const Image = styled.img`
+  max-width: 500px;
   height: 400px;
-  width: auto;
+  min-width: 200px;
+  object-fit: cover;
   border-radius: 7px;
-  box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 40px 5pxrgba (0, 0, 0, 0.5);
+  @media only screen and (max-width: 400px) {
+    max-width: 300px;
+  }
 `
 
 const BorderLinearProgress = styled(LinearProgress)`

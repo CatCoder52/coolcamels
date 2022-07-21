@@ -11,19 +11,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #303030;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 .text-container {
-    max-width: 50%;
-    text-align: left;
-    margin-top: -150px;
+  max-width: 500px;
+  text-align: left;
+  margin: 0 2rem;
+}
+
+
+h2 {
+  font-size: clamp(1.5rem, 2vw + 2rem, 5.75rem);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p {
+  font-size: clamp(0.875rem, 2vw + 1rem, 1.125rem);
 }
 
 h2.title {
-    color: #cc8621;
+  color: #cc8621;
 }
 
 p.desc {
-    color: #222;
+  color: #222;
+  margin-top: 1rem;
 }
