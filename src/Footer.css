@@ -4,8 +4,10 @@ footer {
   color: #222;
   display: flex;
   flex-wrap: wrap;
+  grid-gap: 10px;
   gap: 10px;
   justify-content: space-between;
+  align-items: center;
 }
 
 footer p {
@@ -26,12 +28,12 @@ footer p {
 }
 
 .sl {
-    border: 1px solid #222;
-    padding: 10px;
-    color: #222;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 1px solid #222;
+  padding: 10px;
+  color: #222;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.sl:hover{
-    border: 1px solid #cd9831;
-    color: #cd9831;
+.sl:hover {
+  border: 1px solid #cd9831;
+  color: #cd9831;
 }
