@@ -8,6 +8,7 @@ footer {
   gap: 10px;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15rem;
 }
 
 footer p {

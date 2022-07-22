@@ -98,7 +98,6 @@ const ConnectButton = styled(WalletMultiButton)`
 
 const NFT = styled(Paper)`
   max-width: 500px;
-  height: 511px;
   margin: -40px auto;
   padding: 5px 20px 20px;
   border: 1px solid #222;
@@ -762,7 +761,7 @@ const Home = (props: HomeProps) => {
                 whitelistEnabled &&
                 whitelistTokenBalance > 0 &&
                 isBurnToken && (
-                  <h3>
+                  <h3 className='redeem-left'>
                     You own {whitelistTokenBalance} WL mint{' '}
                     {whitelistTokenBalance > 1 ? 'tokens' : 'token'}.
                   </h3>
@@ -772,7 +771,7 @@ const Home = (props: HomeProps) => {
                 whitelistEnabled &&
                 whitelistTokenBalance > 0 &&
                 !isBurnToken && (
-                  <h3>You are whitelisted and allowed to mint.</h3>
+                  <h3 className='redeem-left'>You are whitelisted and allowed to mint.</h3>
                 )}
               {wallet && isActive && endDate && Date.now() < endDate.getTime() && (
                 <Countdown
