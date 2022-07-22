@@ -1,9 +1,9 @@
 :root {
-  --main-background-color: #343A50;
-  --card-background-color: #e29b25;
+  --main-background-color: #fff;
+  --card-background-color: #fff;
   --countdown-background-color: #433765;
-  --main-text-color:#F7F6F4;
-  --title-text-color:#ffcc80;
+  --main-text-color:#222;
+  --title-text-color:#222;
 }
 
 body{
@@ -12,6 +12,7 @@ body{
   background-size: cover;
   font-family: 'Kanit', sans-serif;
   font-size: 1.1em;
+  color: #222
 }
 
 h2, p{

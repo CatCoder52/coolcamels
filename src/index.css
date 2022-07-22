@@ -89,3 +89,7 @@ p.desc {
 main {
   min-height: 100vh;
 }
+
+.redeem-left {
+  color: #222;
+}

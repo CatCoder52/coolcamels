@@ -57,7 +57,7 @@ const WalletAmount = styled.div`
   min-width: 48px;
   min-height: auto;
   border-radius: 22px;
-  background-color: var(--main-text-color);
+  background-color: var(--card-background-color);
   box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
     0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
   box-sizing: border-box;
@@ -111,6 +111,7 @@ const NFT = styled(Paper)`
 const Card = styled(Paper)`
   display: inline-block;
   background-color: var(--countdown-background-color) !important;
+  color: #fff;
   margin: 5px;
   min-width: 40px;
   padding: 24px;
@@ -220,7 +221,7 @@ const BorderLinearProgress = styled(LinearProgress)`
   border-radius: 30px;
   border: 2px solid white;
   box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.5);
-  background-color: var(--main-text-color) !important;
+  background-color: var(--card-background-color) !important;
 
   > div.MuiLinearProgress-barColorPrimary {
     background-color: var(--title-text-color) !important;
@@ -543,8 +544,8 @@ const Home = (props: HomeProps) => {
     }
     setSolanaExplorerLink(
       cluster === 'devnet' || cluster === 'testnet'
-        ? 'https://solscan.io/token/' + mintPublicKey + '?cluster=' + cluster
-        : 'https://solscan.io/token/' + mintPublicKey
+        ? 'https://explorer.solana.com/address/' + mintPublicKey + '?cluster=' + cluster
+        : 'https://explorer.solana.com/address/' + mintPublicKey
     )
     setIsMinting(false)
     throwConfetti()
@@ -720,7 +721,6 @@ const Home = (props: HomeProps) => {
             <li className='menu'>Menu1</li>
             <li className='menu'>Menu2</li>
             <li className='menu'>Menu3</li>
-            <li className='menu'>Menu4</li>
           </ul>
           <Wallet>
             {wallet ? (
@@ -785,7 +785,7 @@ const Home = (props: HomeProps) => {
                 />
               )}
               {wallet && isActive && (
-                <h3>
+                <h3 className='redeem-left'>
                   TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}
                 </h3>
               )}
@@ -861,7 +861,7 @@ const Home = (props: HomeProps) => {
               <br />
               {wallet && isActive && solanaExplorerLink && (
                 <SolExplorerLink href={solanaExplorerLink} target='_blank'>
-                  View on Solscan
+                  View on Solana Explorer
                 </SolExplorerLink>
               )}
             </NFT>

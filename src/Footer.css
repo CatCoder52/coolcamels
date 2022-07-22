@@ -24,6 +24,7 @@ footer p {
 
 .social {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   width: 150px;
 }
@@ -33,6 +34,7 @@ footer p {
   padding: 10px;
   color: #222;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-decoration: none;
 }
 .sl:hover {
   border: 1px solid #cd9831;
