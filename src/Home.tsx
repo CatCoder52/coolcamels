@@ -757,21 +757,26 @@ const Home = (props: HomeProps) => {
               </div>
               <br />
               {wallet &&
-                isActive &&
-                whitelistEnabled &&
-                whitelistTokenBalance > 0 &&
-                isBurnToken && (
-                  <h3 className='redeem-left'>
-                    You own {whitelistTokenBalance} WL mint{' '}
-                    {whitelistTokenBalance > 1 ? 'tokens' : 'token'}.
-                  </h3>
-                )}
+              isActive &&
+              whitelistEnabled &&
+              whitelistTokenBalance > 0 &&
+              isBurnToken ? (
+                <h3 className='redeem-left'>
+                  You own {whitelistTokenBalance} WL mint{' '}
+                  {whitelistTokenBalance > 1 ? 'tokens' : 'token'}
+                </h3>
+              ) : (
+                <h3 className='redeem-left'>You are not whitelisted.</h3>
+              )}
+
               {wallet &&
                 isActive &&
                 whitelistEnabled &&
                 whitelistTokenBalance > 0 &&
                 !isBurnToken && (
-                  <h3 className='redeem-left'>You are whitelisted and allowed to mint.</h3>
+                  <h3 className='redeem-left'>
+                    You are whitelisted and allowed to mint.
+                  </h3>
                 )}
               {wallet && isActive && endDate && Date.now() < endDate.getTime() && (
                 <Countdown
